@@ -1,0 +1,395 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/simondlr2/code/ethereum/tlatc/tlatc_app/packages/hardhat/contracts/AnchorCertificates.sol": {
+      "lastModificationDate": 1624373251636,
+      "contentHash": "f04094555d227651873281560dedb174",
+      "sourceName": "contracts/AnchorCertificates.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC721.sol",
+        "./utils/Base64.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AnchorCertificates"
+      ]
+    },
+    "/Users/simondlr2/code/ethereum/tlatc/tlatc_app/packages/hardhat/contracts/ERC721.sol": {
+      "lastModificationDate": 1624374382383,
+      "contentHash": "0d070b984eec8db0067ce48738da1aa2",
+      "sourceName": "contracts/ERC721.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IERC721.sol",
+        "./interfaces/IERC721Receiver.sol",
+        "./interfaces/IERC721Metadata.sol",
+        "./utils/Address.sol",
+        "./utils/Strings.sol",
+        "./ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721"
+      ]
+    },
+    "/Users/simondlr2/code/ethereum/tlatc/tlatc_app/packages/hardhat/contracts/utils/Base64.sol": {
+      "lastModificationDate": 1622140911222,
+      "contentHash": "f256e7e312bbf5367dee22ba2e84b374",
+      "sourceName": "contracts/utils/Base64.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Base64"
+      ]
+    },
+    "/Users/simondlr2/code/ethereum/tlatc/tlatc_app/packages/hardhat/contracts/interfaces/IERC721.sol": {
+      "lastModificationDate": 1622038185627,
+      "contentHash": "5620c25e1da62c52685bde13487a3392",
+      "sourceName": "contracts/interfaces/IERC721.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "/Users/simondlr2/code/ethereum/tlatc/tlatc_app/packages/hardhat/contracts/interfaces/IERC721Receiver.sol": {
+      "lastModificationDate": 1622038278719,
+      "contentHash": "2d92cd688336c0373fdf1f11d81fc2fc",
+      "sourceName": "contracts/interfaces/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Receiver"
+      ]
+    },
+    "/Users/simondlr2/code/ethereum/tlatc/tlatc_app/packages/hardhat/contracts/interfaces/IERC721Metadata.sol": {
+      "lastModificationDate": 1622038234048,
+      "contentHash": "874acaff1053ccf163c6b9c5e6e113dd",
+      "sourceName": "contracts/interfaces/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Metadata"
+      ]
+    },
+    "/Users/simondlr2/code/ethereum/tlatc/tlatc_app/packages/hardhat/contracts/utils/Address.sol": {
+      "lastModificationDate": 1622037909165,
+      "contentHash": "814be9319f446615e8525705ee270db5",
+      "sourceName": "contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/Users/simondlr2/code/ethereum/tlatc/tlatc_app/packages/hardhat/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1622038004482,
+      "contentHash": "0c921ced37a8cce7ac5071f9dd2e8f45",
+      "sourceName": "contracts/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/Users/simondlr2/code/ethereum/tlatc/tlatc_app/packages/hardhat/contracts/ERC165.sol": {
+      "lastModificationDate": 1622038051544,
+      "contentHash": "847f7c24ac6ec92b8610f8f9f51416e0",
+      "sourceName": "contracts/ERC165.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/Users/simondlr2/code/ethereum/tlatc/tlatc_app/packages/hardhat/contracts/interfaces/IERC165.sol": {
+      "lastModificationDate": 1622038070113,
+      "contentHash": "3e75af5c8391ff9795a51843c64f9561",
+      "sourceName": "contracts/interfaces/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/Users/simondlr2/code/ethereum/tlatc/tlatc_app/packages/hardhat/contracts/uint8Tester.sol": {
+      "lastModificationDate": 1623765211461,
+      "contentHash": "6439a9da11aa2d01f35abec8f4935bd2",
+      "sourceName": "contracts/uint8Tester.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "uint8Tester"
+      ]
+    }
+  }
+}

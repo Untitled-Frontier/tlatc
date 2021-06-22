@@ -1,0 +1,30 @@
+body {
+  color: white;
+  background-color: black;
+}
+
+h2, h3 {
+  color: white;
+}
+
+.App {
+  text-align: left;
+  max-width: 500px;
+  margin: 0px auto auto;
+}
+
+.section {
+  text-align: left;
+  max-width: 500px;
+  margin: 0px auto auto;
+}
+
+.account {
+  text-align: right;
+  max-width: 500px;
+  margin: 20px auto 4px;
+}
+
+.bshadow {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
