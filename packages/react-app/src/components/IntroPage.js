@@ -95,6 +95,8 @@ function IntroPage(props) {
           <li>Only a maximum of 100 will exist. </li>
           <li>The buyer's address will forever be etched into the certificate as a sponsor (even when transferred elsewhere). </li>
         </ul>
+        The components that make up the certificates are licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Thus, you are free to use the NFTs as you wish. <a href="https://github.com/Untitled-Frontier/tlatc">The code is available on Github.</a><br />
+        <br />
         {/* MINT SECTION */}
         <div className="section">
         <h2>[] Mint</h2>
