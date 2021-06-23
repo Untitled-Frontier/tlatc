@@ -26,7 +26,6 @@ function App() {
   const [hardcodedChainId, setHardcodedChainId] = useState(null); // set it manually
 
   let ACAddress = "0x600a4446094C341693C415E6743567b9bfc8a4A8"; // mainnet
-  // let ACAddress = "0x22A35Bc1CD2Edf8BD137812A4BB9DCcE77D82b34"; // rinkeby
 
   let dfPrice = "0.01"; // ~$20 @ 2000/ETH
   let dxPrice = "0.05"; // ~$100 @ 2000/ETH
