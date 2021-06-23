@@ -39,7 +39,7 @@ function IntroPage(props) {
                 </Button>
                 <br />
                 <br />
-                By minting, you agree to the Terms of Service.
+                By minting, you agree to the <a href="https://github.com/Untitled-Frontier/tlatc/blob/master/TOS_PP.pdf">Terms of Service</a>.
             </Fragment>
             setMintSection(newMintHTML);
         }
