@@ -60,7 +60,7 @@ function IntroPage(props) {
           <Fragment>
             <h2>Your Newly Minted Certificate To Anchor City! Welcome!</h2>
             <CellsComponent hash={props.tokenId} ACSigner={props.ACSigner} /> <br />
-            To interact with the certificate: to view it, to transfer it, and to see other certificates, head to <a href="https://opensea.io/collection/anchorcertificates" target="_blank">OpenSea</a>. It's a platform to view and interact with NFTs, including Anchor Certificates. It will be in your profile. If you choose to mint another, new certificate, it will update to display your new certificate. All certificates, however, are recorded
+            To interact with the certificate: to view it, to transfer it, and to see other certificates, head to <a href="https://opensea.io/collection/anchor-certificates" target="_blank">OpenSea</a>. It's a platform to view and interact with NFTs, including Anchor Certificates. It will be in your profile. If you choose to mint another, new certificate, it will update to display your new certificate. All certificates, however, are recorded
             on the Ethereum blockchain, and viewable in OpenSea.
           </Fragment>
         );
@@ -110,7 +110,7 @@ function IntroPage(props) {
         <hr /> 
         To view all the certificates that have been minted, head to OpenSea below. If you've minted certificates before, it will be viewable there: <br />
         <br />
-        <a href="https://opensea.io/collection/anchorcertificates" target="_blank"><Button>View The Entire Collection on OpenSea</Button></a>
+        <a href="https://opensea.io/collection/anchor-certificates" target="_blank"><Button>View The Entire Collection on OpenSea</Button></a>
         <br />
         <br />
         <br />
