@@ -76,7 +76,7 @@ export default function Account(props) {
 
   return (
     <div className="account" >
-      <span style={{float:"left", marginTop:"4px"}}> ANCHOR CERTIFICATES </span>
+      <span style={{float:"left"}}> <h3>ANCHOR CERTIFICATES</h3> </span>
       {displayAddress}
       {modalButtons}
       <hr />

@@ -27,16 +27,19 @@ function IntroPage(props) {
     useEffect(() => {
         if(typeof props.address !== 'undefined' && props.ACSigner !== null) {
             const newMintHTML = <Fragment>
-                {props.dfPrice} ETH (~$20)<br />
+                {props.dfPrice} ETH (~$20). Available until 26 July. <br />
                 <Button size={"small"} loading={props.minting} onClick={mintDefaultAnchorCertificate}>
                    Mint Default Certificate.
                 </Button>
                 <br />
                 <br />
-                {props.dxPrice} ETH (~$100)<br />
+                {props.dxPrice} ETH (~$100). Available until 100 are sold, or until 26 July.<br />
                 <Button size={"small"} loading={props.minting} onClick={mintDeluxeAnchorCertificate}>
                    Mint Deluxe Certificate.
                 </Button>
+                <br />
+                <br />
+                By minting, you agree to the Terms of Service.
             </Fragment>
             setMintSection(newMintHTML);
         }
@@ -55,9 +58,10 @@ function IntroPage(props) {
         // new certificate was minted, thus display it.
         setDisplaySection(
           <Fragment>
-            <h2>Your Newly Minted Certificate!</h2>
-            <h2>Welcome To Anchor City!</h2>
-            <CellsComponent hash={props.tokenId} ACSigner={props.ACSigner} />
+            <h2>Your Newly Minted Certificate To Anchor City! Welcome!</h2>
+            <CellsComponent hash={props.tokenId} ACSigner={props.ACSigner} /> <br />
+            To interact with the certificate: to view it, to transfer it, and to see other certificates, head to <a href="https://opensea.io/collection/anchorcertificates" target="_blank">OpenSea</a>. It's a platform to view and interact with NFTs, including Anchor Certificates. It will be in your profile. If you choose to mint another, new certificate, it will update to display your new certificate. All certificates, however, are recorded
+            on the Ethereum blockchain, and viewable in OpenSea.
           </Fragment>
         );
       }
@@ -72,10 +76,10 @@ function IntroPage(props) {
         <br />
         <br />
         Join him and others by purchasing NFT memorabilia from the story in form of generative art anchor certificates.
-        Until Monday 26 July 2021 (14:00 GMT), fans can mint any amount of default certificates for ~$20 (0.01 ETH) or pay to mint a 
+        Until Monday 26 July 2021 (14:00 GMT), fans can mint any amount of default certificates for ~$20 (0.01 ETH) or a 
         deluxe certificate for ~$100 (0.05 ETH) until supply (100) lasts. After the campaign ends, no new certificates for this edition can be minted.<br />
         <br />
-        <h2>Default Certificates</h2>
+        <h2>[] Default Certificates</h2>
         Each default certificate is comprised of the following randomly generated features: <br />
         <ul>
           <li>One of 16 colour palettes.</li>
@@ -84,17 +88,16 @@ function IntroPage(props) {
         </ul>
         There's no limit to the available amount of Default Certificates until the end of the campaign date.<br />
         <br />
-        <h2>Deluxe Certificates</h2>
-        Alongside the components of the default certificiates, each deluxe certificate contains: <br />
+        <h2>[] Deluxe Certificates</h2>
+        Alongside the components of the default certificates, each deluxe certificate contains: <br />
         <ul>
           <li>A different edition title: "DX1" vs "DF1". </li>
           <li>Only a maximum of 100 will exist. </li>
           <li>The buyer's address will forever be etched into the certificate as a sponsor (even when transferred elsewhere). </li>
         </ul>
-        <br />
         {/* MINT SECTION */}
         <div className="section">
-        <h2>Mint</h2>
+        <h2>[] Mint</h2>
         {mintSection}
         </div>
         <br />
@@ -102,7 +105,8 @@ function IntroPage(props) {
         <br />
         <br />
         <div style={{textAlign:'center'}}>
-        To view a certificate that you have minted in the past and the rest of the certificates, head on over to OpenSea below: <br />
+        <hr /> 
+        To view all the certificates that have been minted, head to OpenSea below. If you've minted certificates before, it will be viewable there: <br />
         <br />
         <a href="https://opensea.io/collection/anchorcertificates" target="_blank"><Button>View The Entire Collection on OpenSea</Button></a>
         <br />

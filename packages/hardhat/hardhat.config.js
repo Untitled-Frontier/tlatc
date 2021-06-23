@@ -22,7 +22,7 @@ module.exports = {
     mainnet: {
       url: `https://mainnet.infura.io/v3/${infuraID}`,
       accounts: [deployAccounts[0].privateKey],
-      gasPrice: 80e9
+      gasPrice: 25e9
     },
     rinkeby: {
       url: `https://rinkeby.infura.io/v3/${infuraID}`,
@@ -31,7 +31,7 @@ module.exports = {
     }
   },
   etherscan: {
-    apiKey: ''
+    apiKey: 'UU4J51IQP66J8AGFK8F3C5V8Y6CCB3MRUX'
   },
   solidity: {
     version : "0.8.4",

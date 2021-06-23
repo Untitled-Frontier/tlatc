@@ -25,7 +25,7 @@ function App() {
   const [injectedChainId, setInjectedChainId] = useState(null);
   const [hardcodedChainId, setHardcodedChainId] = useState(null); // set it manually
 
-  let ACAddress = "0x600a4446094C341693C415E6743567b9bfc8a4A8"; // rinkeby
+  let ACAddress = "0x600a4446094C341693C415E6743567b9bfc8a4A8"; // mainnet
   // let ACAddress = "0x22A35Bc1CD2Edf8BD137812A4BB9DCcE77D82b34"; // rinkeby
 
   let dfPrice = "0.01"; // ~$20 @ 2000/ETH
@@ -47,9 +47,9 @@ function App() {
               setInjectedChainId(id);
 
               // comment out line for local or prod
-              // setHardcodedChainId(1); // mainnet
+              setHardcodedChainId(1); // mainnet
               // setHardcodedChainId(4); // rinkeby
-              setHardcodedChainId(id); // local (uses injectedProvider)
+              // setHardcodedChainId(id); // local (uses injectedProvider)
               
           }
       }
@@ -78,7 +78,8 @@ function App() {
       /*Used for testing UI*/
       // await new Promise(resolve => setTimeout(resolve, 5000));
       console.log(update);
-      if(update.eventCode === "txConfirmed") {
+      console.log(update.eventCode);
+      if(update.eventCode === "txConfirmed" || update.confirmations === 1) {
         const txResponse = await injectedProvider.getTransaction(update.hash);
         console.log(txResponse);
         const receipt = await txResponse.wait();

@@ -15,11 +15,12 @@
     "react-app:test": "yarn workspace @tlatc_app/react-app test",
     "build": "yarn workspace @tlatc_app/react-app build --max-old-space-size=12288",
     "node": "cd packages/hardhat && npx hardhat node",
-    "deploy_contracts_local": "cd packages/hardhat && npx hardhat run --network localhost scripts/deploy.js",
+    "deploy_contracts_local": "cd packages/hardhat && npx hardhat run --network localhost scripts/deploy_local.js",
     "deploy_contracts_rinkeby": "cd packages/hardhat && npx hardhat run --network rinkeby scripts/deploy.js",
     "deploy_contracts_mainnet": "cd packages/hardhat && npx hardhat run --network mainnet scripts/deploy.js",
     "publish_contracts": "cd packages/hardhat && npx run scripts/publish.js",
     "test_contracts": "cd packages/hardhat && npx hardhat test",
+    "verify": "cd packages/hardhat && npx hardhat verify --network mainnet 0x600a4446094C341693C415E6743567b9bfc8a4A8 'Anchor Certificates' 'ACS' '0xaF69610ea9ddc95883f97a6a3171d52165b69B03' '1624888800' '1627308000'",
     "start": "yarn workspace @tlatc_app/react-app start",
     "compile": "cd packages/hardhat && npx hardhat compile"
   },
