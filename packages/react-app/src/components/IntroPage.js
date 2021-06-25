@@ -26,22 +26,27 @@ function IntroPage(props) {
 
     useEffect(() => {
         if(typeof props.address !== 'undefined' && props.ACSigner !== null) {
-            const newMintHTML = <Fragment>
-                {props.dfPrice} ETH (~$20). Available until 26 July. <br />
-                <Button size={"small"} loading={props.minting} onClick={mintDefaultAnchorCertificate}>
-                   Mint Default Certificate.
-                </Button>
-                <br />
-                <br />
-                {props.dxPrice} ETH (~$100). Available until 100 are sold, or until 26 July.<br />
-                <Button size={"small"} loading={props.minting} onClick={mintDeluxeAnchorCertificate}>
-                   Mint Deluxe Certificate.
-                </Button>
-                <br />
-                <br />
-                By minting, you agree to the <a href="https://github.com/Untitled-Frontier/tlatc/blob/master/TOS_PP.pdf">Terms of Service</a>.
-            </Fragment>
-            setMintSection(newMintHTML);
+          let disabled = true;
+          var unix = Math.round(+new Date()/1000);
+          if(unix >= 1624888800) { disabled = false; }
+          const newMintHTML = <Fragment>
+            Campaign starts on Mon Jun 28 2021 at 14:00:00 GMT+0000. Refresh to enable buttons if this time had passed. <br />
+            <br />
+            {props.dfPrice} ETH (~$20). Available until 26 July. <br />
+            <Button size={"small"} disabled={disabled} loading={props.minting} onClick={mintDefaultAnchorCertificate}>
+                Mint Default Certificate.
+            </Button>
+            <br />
+            <br />
+            {props.dxPrice} ETH (~$100). Available until 100 are sold, or until 26 July.<br />
+            <Button size={"small"} disabled={disabled} loading={props.minting} onClick={mintDeluxeAnchorCertificate}>
+                Mint Deluxe Certificate.
+            </Button>
+            <br />
+            <br />
+            By minting, you agree to the <a href="https://github.com/Untitled-Frontier/tlatc/blob/master/TOS_PP.pdf">Terms of Service</a>.
+          </Fragment>
+          setMintSection(newMintHTML);
         }
     }, [props.address, props.ACSigner, props.minting]);
 
