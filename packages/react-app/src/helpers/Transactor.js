@@ -18,7 +18,7 @@ export default function Transactor(provider, gasPrice, etherscan) {
       const network = await provider.getNetwork();
       console.log("network", network);
       const options = {
-        dappId: process.env.REACT_APP_BLOCKNATIVE_ID, // GET YOUR OWN KEY AT https://account.blocknative.com
+        dappId: '8e383acf-9eee-422a-a01d-fa1baa1a29e0', // GET YOUR OWN KEY AT https://account.blocknative.com
         system: "ethereum",
         networkId: network.chainId,
         // darkMode: Boolean, // (default: false)
