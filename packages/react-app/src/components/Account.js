@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { ethers } from "ethers";
+import { Link } from 'react-router-dom';
 import Web3Modal from "web3modal";
 import { Address } from "."
 import { usePoller } from "../hooks"
@@ -76,7 +77,9 @@ export default function Account(props) {
 
   return (
     <div className="account" >
-      <span style={{float:"left",marginTop:"4px"}}> <h3>ANCHOR CERTIFICATES</h3> </span>
+      <span style={{float:"left",marginTop:"4px"}}> <h3><Link to="/">ANCHOR CERTIFICATES</Link> - <Link to="/stats">STATS</Link></h3>
+      
+      </span>
       {displayAddress}
       {modalButtons}
       <hr />
