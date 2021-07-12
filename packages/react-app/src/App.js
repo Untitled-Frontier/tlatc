@@ -6,10 +6,13 @@ import "./App.css";
 import { Account } from "./components"
 
 import IntroPage from './components/IntroPage.js';
+import StatsPage from './components/StatsPage.js';
 
 import { usePoller } from "./hooks";
 
 import Transactor from "./helpers/Transactor.js"; 
+
+import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 
 // Artifacts
 import ACJSON from "./contracts/AnchorCertificates.json";
@@ -96,8 +99,18 @@ function App() {
       }
     });
   }
+
+  // mainnet
+  const graphURI = 'https://api.thegraph.com/subgraphs/name/simondlr/tlatc';
+  // const graphURI = 'http://localhost:8000/subgraphs/name/simondlr/neolastics-subgraph';
+
+  const client = new ApolloClient({
+    uri: graphURI,
+    cache: new InMemoryCache(),
+  });
   
   return (
+    <ApolloProvider client={client}>
       <div>
       <Account
         address={address}
@@ -119,8 +132,13 @@ function App() {
             dxPrice={dxPrice}
           />
       </Route>
+      <Route path="/stats">
+          <StatsPage
+          />
+      </Route>
       </Switch>
       </div>
+    </ApolloProvider>
   );
 }
 
