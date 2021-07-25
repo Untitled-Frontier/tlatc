@@ -38,8 +38,8 @@ function IntroPage(props) {
             </Button>
             <br />
             <br />
-            {props.dxPrice} ETH (~$100). Available until 100 are sold, or until 26 July.<br />
-            <Button size={"small"} disabled={disabled} loading={props.minting} onClick={mintDeluxeAnchorCertificate}>
+            {props.dxPrice} ETH (~$100). Available until 100 are sold, or until 26 July (sold out!).<br />
+            <Button size={"small"} disabled={true} loading={props.minting} onClick={mintDeluxeAnchorCertificate}>
                 Mint Deluxe Certificate.
             </Button>
             <br />
