@@ -30,10 +30,10 @@ function IntroPage(props) {
           var unix = Math.round(+new Date()/1000);
           if(unix >= 1624888800) { disabled = false; }
           const newMintHTML = <Fragment>
-            Campaign starts on Mon Jun 28 2021 at 14:00:00 GMT+0000. Refresh to enable buttons if this time had passed. <br />
+            Campaign started on Mon Jun 28 2021 at 14:00:00 GMT+0000 and has ended. <br />
             <br />
-            {props.dfPrice} ETH (~$20). Available until 26 July. <br />
-            <Button size={"small"} disabled={disabled} loading={props.minting} onClick={mintDefaultAnchorCertificate}>
+            {props.dfPrice} ETH (~$20). Available until 26 July (deadline has ended). <br />
+            <Button size={"small"} disabled={true} loading={props.minting} onClick={mintDefaultAnchorCertificate}>
                 Mint Default Certificate.
             </Button>
             <br />
@@ -82,7 +82,7 @@ function IntroPage(props) {
         <br />
         Join him and others by purchasing NFT memorabilia from the story in form of generative art anchor certificates.
         Until Monday 26 July 2021 (14:00 GMT), fans can mint any amount of default certificates for ~$20 (0.01 ETH) or a 
-        deluxe certificate for ~$100 (0.05 ETH) until supply (100) lasts. After the campaign ends, no new certificates for this edition can be minted.<br />
+        deluxe certificate for ~$100 (0.05 ETH) until supply (100) lasts. After the campaign ends, no new certificates for this edition can be minted. The campaign has ended and no new certificates can be minted.<br />
         <br />
         <h2>[] Default Certificates</h2>
         Each default certificate is comprised of the following randomly generated features: <br />
