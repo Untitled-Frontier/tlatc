@@ -80,9 +80,13 @@ function IntroPage(props) {
         Alan Bloom and many other uploaded minds attempt to join reality again by moving to Anchor City. 
         <br />
         <br />
-        Join him and others by purchasing NFT memorabilia from the story in form of generative art anchor certificates.
-        Until Monday 26 July 2021 (14:00 GMT), fans can mint any amount of default certificates for ~$20 (0.01 ETH) or a 
-        deluxe certificate for ~$100 (0.05 ETH) until supply (100) lasts. After the campaign ends, no new certificates for this edition can be minted. The campaign has ended and no new certificates can be minted.<br />
+        Join him and others by purchasing NFT memorabilia from the story in form of generative art anchor certificates!
+        From June 28 2021 until Monday 26 July 2021 (14:00 GMT), fans minted 100 Deluxe Certificates for ~$100 each (0.05 ETH) and 60 Default certificates for ~$20 (0.01 ETH) each.<br />
+        <br />
+        To view and collect Anchor Certificates from existing collectors, head over to OpenSea. <br />
+        <br />
+        <a href="https://opensea.io/collection/anchor-certificates" target="_blank"><Button>View The Entire Collection on OpenSea</Button></a>
+        <br />
         <br />
         <h2>[] Default Certificates</h2>
         Each default certificate is comprised of the following randomly generated features: <br />
@@ -91,7 +95,7 @@ function IntroPage(props) {
           <li>One of 64 reasons to move back to Anchor City. (eg, to build, to dance, to fly, to sing).</li>
           <li>Variable heights of the skyscraper barcode and changes in the spacing/patterns.</li>
         </ul>
-        There's no limit to the available amount of Default Certificates until the end of the campaign date.<br />
+        There was no limit to the available amount of Default Certificates until the end of the campaign date.<br />
         <br />
         <h2>[] Deluxe Certificates</h2>
         Alongside the components of the default certificates, each deluxe certificate contains: <br />
@@ -111,15 +115,6 @@ function IntroPage(props) {
         {displaySection}
         <br />
         <br />
-        <div style={{textAlign:'center'}}>
-        <hr /> 
-        To view all the certificates that have been minted, head to OpenSea below. If you've minted certificates before, it will be viewable there: <br />
-        <br />
-        <a href="https://opensea.io/collection/anchor-certificates" target="_blank"><Button>View The Entire Collection on OpenSea</Button></a>
-        <br />
-        <br />
-        <br />
-        </div>
         </div>
     );
 }
